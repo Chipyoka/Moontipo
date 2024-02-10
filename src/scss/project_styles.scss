@@ -1,0 +1,305 @@
+// importing Bootstrap SCSS
+@import "bootstrap/scss/bootstrap";
+//variables
+$body-bg: #f9fafa;
+$body-color:rgb(35, 35, 35) ;
+$nav-link-padding-x: 1em;
+$bs-primary:#065f7a;
+$bs-primary-2:rgb(3, 55, 71);
+$bs-secondary: #fa615b;
+$color-white: #ffffff;
+$color-active: yellow;
+$color-active-bg: rgb(238, 238, 61);
+
+// fonts variables
+$primary-font: 'Montserrat', sans-serif;
+$font-size-base:  1rem;
+$font-size-sm: $font-size-base * .85;
+
+// Global Rules
+.custom-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    font-family: $primary-font;
+    background-color: $body-bg;
+}
+.banner-1{
+    background-color: $bs-primary;
+    max-width: 100%;
+    padding: 0em;
+}
+.banner-2{
+    background-color: $bs-primary;
+    background: url(/src/assets/image8-2.png) no-repeat 0 0;
+    max-width: 100%;
+    margin-top: 5em;
+    height: 250px;
+    padding: 0em;
+    overflow: hidden;
+}
+.top-text span {
+    font-size: $font-size-base * 3.5;
+}
+.top-text{
+    margin-top: 2em;
+    font-size: $font-size-base * 2.5;
+    font-weight: 600;
+    margin-left: 3em;
+}
+.card{
+    max-width: 19em;
+}
+section{ margin-top: 1em;}
+h4{margin-top: .3em; margin-bottom: 0em; font-size: $font-size-base * 1.2; }
+h5{margin-top: .5em; margin-bottom: .5em; font-size: $font-size-base * .9; color: $bs-primary;}
+h6{margin-top: .9em; margin-bottom: .5em; font-size: $font-size-base * .7;}
+hr{margin: 0em;}
+//h5{font-size: $font-size-base * 0.5;}
+
+//Navigation
+.logo{
+    max-width: 140;
+}
+.navbar-nav{
+    justify-content: flex-end;
+}
+.nav-bg{
+    background-color: $bs-primary;
+    color: $color-white;
+}
+.navbar-toggler-icon {
+    background-color: $color-white;
+}
+.navbar-toggler{
+    border: none;
+    color: $color-white;
+    background-color: $color-white;
+}
+button.navbar-toggler span.navbar-toggler-icon::after{
+    border: none;
+}
+
+.active-link{
+    color: $color-white;
+    border-bottom: solid white;
+    margin-bottom: .2em;
+}
+
+
+.btn-success{
+    background-color: $bs-secondary;
+    border: none;
+    color: $color-white;
+}
+.btn-success:hover{
+    background-color: #ce3732;
+    color: $color-white;
+}
+.nav-link:hover{
+    color: $bs-secondary;
+   
+}
+.nav-link{
+    color: $color-white;
+    padding-bottom: 0em;
+}
+// CTA
+a.cta-1:hover {
+    border: solid $bs-primary-2;
+    background-color: $bs-primary-2;
+    color:#ffffff;
+}
+a.cta-1{
+    padding: 3px 20px;
+    border: solid $bs-primary;
+    background-color: $bs-primary;
+    color:#fff;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    margin-top: 1em;
+}
+
+div.custom-container a.cta-2:hover {
+    border: solid #ce3732;
+    background-color: #ce3732;
+    color:#ffffff;
+}
+div.custom-container a.cta-2{
+    padding: 3px 35px;
+    border: solid #fa615b;
+    background-color: #fa615b;
+    color:#fff;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    margin-top: 1em;
+}
+// image cards
+.img-card{
+    padding: 0.3em 0.1em;
+  
+}
+.img-card img{
+    padding: 0.3em 0.1em;
+    margin: .5em .5em;
+  
+}
+
+// Project Details style
+.details{  
+    background-color: $color-white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    padding: 1em;
+}
+.details p{
+    font-size: $font-size-sm;
+}
+.details ol{
+    font-size: $font-size-sm;
+}
+// pagination
+.page-link-active{
+    color: $bs-primary;
+    border: none;
+    text-decoration: underline;
+    background-color: $body-bg;
+}
+.page-link{
+    border: none;
+    background-color: $body-bg;
+}
+.page-item{
+    border: none;
+    background-color: $body-bg;
+}
+//footer styling
+.by {
+    color: $bs-primary-2;
+    font-size: 0.8em;
+}
+.social img:hover{
+    transition: transform .8s ease;
+    transform: scale(1.05);
+}
+.social img{
+    margin: 0 0.5em;
+}
+ footer{
+    padding-top: 2em;
+    color: black;
+    background-color: darkgrey ;
+ }
+ .footer-link ul li{
+    list-style: none;
+ }
+ .footer-link ul li a:hover{
+    text-decoration: underline;
+ }
+ .footer-link ul li a:visited{
+    color: $bs-secondary;
+ }
+ .footer-link ul li a{
+    text-decoration: none;
+    color:$body-color;
+    font-size: $font-size-base * .85;
+ }
+ .copyright{
+    color:black;
+    font-size: $font-size-base * .75;
+ }
+
+
+ //////////////////////////////////////////////////////////////////////////////
+/// 
+
+//Media Queries
+@media (width >= 992px){
+    .navbar-brand{
+        margin-left: 5em;
+    }
+    .me-auto {
+        margin-right: 40em !important;
+    }
+    .search-bar{
+        width: 500px;
+    }
+}
+ @media (max-width: 868px){
+    .font-size-md{
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    .font-size-md-s{
+        font-size: 1.2rem;
+        margin: 1rem;
+        text-align: left;
+        font-weight: 600;
+    }
+    .font-size-sm{
+        font-size: .7rem;
+        font-weight: 600;
+    }
+    .paragraph-font-sm{
+        font-size: .55rem;
+    }
+    .copyright{
+        font-size: .75rem;
+    }
+    .about-tag-text{
+        font-size: 1.5rem;
+    }
+    .profile-img img{
+        margin-left: .55em;
+    }
+
+    .banner-2{
+        height: 200px;
+    }
+    .top-text span{
+        font-size: 3.2rem;
+    }
+    .top-text{
+        margin-top: 2em;
+        margin-left: 0em;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .title{
+        margin-top: 5em;
+    }
+    .small-p{
+        font-family: .2rem;
+    }
+    .details{  
+        background-color: $color-white;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+        padding: 1em 1em;
+    }
+    .img-card img{
+        max-width: 315px;
+    }
+    .page-item{
+        border: none;
+        background-color: $body-bg;
+    }
+    .page-link{
+        border: none;
+        background-color: $body-bg;
+    }
+    .page-link:active{
+        border: none;
+        background-color: $body-bg;
+    }
+    .page-link-active{
+        color: $bs-primary;
+        border: none;
+        text-decoration: underline;
+        background-color: $body-bg;
+    }
+ 
+ 
+}

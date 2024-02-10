@@ -1,0 +1,577 @@
+// importing Bootstrap SCSS
+@import "bootstrap/scss/bootstrap";
+//variables
+$body-bg: #f9fafa;
+$body-color:rgb(35, 35, 35) ;
+$nav-link-padding-x: 1em;
+$bs-primary:#065f7a;
+$bs-primary-2:rgb(3, 55, 71);
+$bs-secondary: #fa615b;
+$color-white: #ffffff;
+$color-active: yellow;
+$color-active-bg: rgb(238, 238, 61);
+
+// fonts variables
+$primary-font: 'Montserrat', sans-serif;
+$font-size-base:  1rem;
+$font-size-sm: $font-size-base * .85;
+
+
+// Global Rules
+.custom-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    font-family: $primary-font;
+    background-color: $body-bg;
+}
+.banner-1{
+    background-color: rgb(230, 227, 227);
+    max-width: 100%;
+    padding: 0em;
+    margin-top: 5em;
+}
+.banner-2{
+    background-color: $bs-primary;
+    background: url(/src/assets/image8-2.png) no-repeat 0 0;
+    max-width: 100%;
+    margin-top: 5em;
+    height: 250px;
+    padding: 0em;
+    overflow: hidden;
+}
+.top-text span {
+    font-size: $font-size-base * 3.5;
+}
+.top-text{
+    margin-top: 2em;
+    font-size: $font-size-base * 2.5;
+    font-weight: 600;
+    margin-left: 3em;
+}
+.card{
+    max-width: 19em;
+}
+section{ margin-top: 1em; padding: 0em 0em}
+h4{margin-top: 3em; margin-bottom: .5em; font-size: $font-size-base * 1.2;}
+h5{margin-top: .5em; margin-bottom: .5em; font-size: $font-size-base * .9;}
+h6{margin-top: .9em; margin-bottom: .5em; font-size: $font-size-base * .7;}
+hr{margin: 0em;}
+//h5{font-size: $font-size-base * 0.5;}
+///////////////////////////////////////////////////////////
+// Header
+
+.banner-text{
+    margin-top: 3em;
+}
+.banner-text h4{
+    font-size: $font-size-base * 5;
+    font-weight: 600;
+    color: $bs-primary;
+    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+}
+.banner-text p{
+    font-size: $font-size-base * 1.2;
+    color: $bs-primary;
+    margin-bottom: 1em;
+    margin-top: 0.1em;
+}
+
+//Navigation
+.logo{
+    max-width: 140;
+}
+.navbar-nav{
+    justify-content: flex-start;
+    margin-left: 0em;
+}
+
+
+.nav-bg{
+    background-color: $bs-primary;
+    color: $color-white;
+}
+.navbar-toggler-icon {
+    background-color: $color-white;
+}
+.navbar-toggler{
+    border: none;
+    color: $color-white;
+    background-color: $color-white;
+}
+button.navbar-toggler span.navbar-toggler-icon:after{
+    border: none;
+}
+
+.active-link{
+    color: $color-white;
+    border-bottom: solid white;
+    margin-bottom: .2em;
+}
+
+
+.btn-success{
+    background-color: $bs-secondary;
+    border: none;
+    color: $color-white;
+}
+.btn-success:hover{
+    background-color: #ce3732;
+    color: $color-white;
+}
+.nav-link:hover{
+    color: $bs-secondary;
+   
+}
+.nav-link{
+    color: $color-white;
+    padding-bottom: 0em;
+}
+
+.banner{
+    margin-top: 5.5em;
+    margin-bottom: 0em;
+
+}
+
+.fixed-caption-text{
+    //color:$bs-primary;
+    font-weight:500;
+    font-size: $font-size-base * 1;
+  }
+//Profile summary section
+.profile-sum{
+    margin: 0em 1.3em;
+}
+
+.profile-sum h5{
+    font-size: $font-size-base * 1.5;
+    margin: 0.4em .3em;
+    line-height: 0.8;
+}
+
+.profile-sum h5 span{
+    font-size: $font-size-base * .7;
+    margin: 0.3em .3em;
+}
+.pro-hr{
+    width: 30%;
+}
+// Services section
+
+.card-text-ft{
+    font-size: $font-size-sm;
+}
+.btn-primary{
+    background-color: $bs-primary;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: $bs-primary-2;
+}
+.card-h{
+    border: none;
+    height:auto;
+    background-color: $color-white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    padding: 0.5em 1em;
+}
+.service{
+    width: 95%;
+}
+.card-h .card-body{
+    margin-left: 1em;
+    margin-top: 0em;
+    //width:90%;
+}
+.card{
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    width: 94%;
+    height:auto;
+}
+// My Expertise Section
+.row-card{
+    padding: 1em;
+    margin-top: .5em;
+}
+.long-card:hover{
+    transition: transform .8s ease;
+    transform: scale(1.02);
+}
+.long-card{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    height: 65px;
+    border-radius: 10px;
+    
+}
+.short-card:hover{
+    transition: transform .8s ease;
+    transform: scale(1.02);
+}
+.short-card{ 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    height: 65px;
+    border-radius: 10px;
+    
+}
+.h5-card{
+    margin-top: 1.5em;
+}
+.s-card-1{
+    background: url(/src/assets/image3-2.png) no-repeat 0 0;
+}
+.s-card-2{
+    background: url(/src/assets/image2.jpg) no-repeat 0 0;
+}
+.l-card-1{
+    background: url(/src/assets/image4-1.png) no-repeat 0 0;
+}
+.l-card-2{
+    background: url(/src/assets/image4-3.png) no-repeat 0 0;
+}
+
+// About me styles
+.about-me{
+   background-color: $color-white;
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    height: auto;
+}
+.profile-img{
+   
+    overflow: hidden;
+    align-items: center;
+}
+
+.about-text{
+  
+    padding: 1em;
+}
+
+.about-tag-text{
+    color:$bs-secondary;
+    font-size: $font-size-base * 2;
+}
+aside.about-text h6 span{
+    color:$bs-primary;
+}
+// Cta 
+a.cta-1:hover {
+    border: solid #ce3732;
+    background-color: #ce3732;
+    color:#ffffff;
+}
+a.cta-1{
+    padding: 3px 35px;
+    border: solid #fa615b;
+    background-color: #fa615b;
+    color:#fff;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    margin-top: 3em;
+}
+
+a.cta-2:hover {
+    border: solid $bs-primary-2;
+    background-color: $bs-primary-2;
+    color:#ffffff;
+}
+a.cta-2{
+    padding: 5px 8px;
+    border: solid $bs-primary;
+    background-color: $bs-primary;
+    color:#fff;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    margin-top: 1em;
+}
+div.custom-container a.cta-3:hover {
+    border: solid #ce3732;
+    background-color: #ce3732;
+    color:#ffffff;
+}
+div.custom-container a.cta-3{
+    padding: 3px 35px;
+    border: solid #fa615b;
+    background-color: #fa615b;
+    color:#fff;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    margin-top: 1em;
+}
+a.banner-cta:hover {
+    border: solid $bs-primary;
+    background-color: $bs-primary;
+    color: rgb(230, 227, 227);
+}
+a.banner-cta{
+    padding: 0.5em 4em;
+    border: solid $bs-primary;
+    background-color: rgb(230, 227, 227);
+    color:$bs-primary;
+
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    margin-top: 1em;
+}
+//footer styling
+.by {
+    color: $bs-primary-2;
+    font-size: 0.8em;
+}
+.social img:hover{
+    transition: transform .8s ease;
+    transform: scale(1.05);
+}
+.social img{
+    margin: 0 0.5em;
+}
+ footer{
+    padding-top: 2em;
+    color: black;
+    background-color: darkgrey ;
+ }
+ .footer-link ul li{
+    list-style: none;
+ }
+ .footer-link ul li a:hover{
+    text-decoration: underline;
+ }
+ .footer-link ul li a:visited{
+    color: $bs-secondary;
+ }
+ .footer-link ul li a{
+    text-decoration: none;
+    color:$body-color;
+    font-size: $font-size-base * .85;
+ }
+ .copyright{
+    color:black;
+    font-size: $font-size-base * .75;
+ }
+///////////////////////////////////////////////////
+/// 
+// Portfolio styling
+// no message error message style
+
+#noResultsMessage{
+    display: none;
+    color: grey;
+}
+//
+.card-img-top-s{
+    margin-top: 0.8em;
+}
+section.ui{
+    background-color: #97d7eb;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.ui-row{
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: .5em;
+    align-items: center;
+    display: flex;
+}
+.ui-card{
+   
+    background-color: $color-white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+    display: flex;
+    padding: .5em .5em;
+    height: auto;
+    margin: 1em;
+    max-width: 35%;
+}
+.ui-card-image{
+    width: 100%;
+    
+}
+.card-body-s{
+    width: 50%;
+    padding: 0em 1em;
+}
+.ui-card-image img{
+    width: 100%;
+    min-width: 50px;
+    border-radius: 3px;
+   
+}
+/////////////////////////////////////////////////////////////////
+// ABout page Styling
+main{
+
+    margin-top: 8em;
+    
+}
+.me{
+    
+    background-color: $color-white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.13);
+}
+.projects{
+    color:$bs-secondary;
+    margin-top: 0em;
+}
+.jobs{
+    margin-top: 0em;
+    margin-bottom: .3em;
+}
+.dur{
+    margin-top: 0em;
+    margin-bottom: .3em;
+}
+h5.cert{
+    margin-top: 1.2em;
+}
+
+.work{
+    padding: 1em 1em;
+}
+.skills{
+    display: flex;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+/// 
+
+//Media Queries
+@media (width >= 992px){
+    .navbar-brand{
+        margin-left: 5em;
+    }
+    .me-auto {
+        margin-right: 40em !important;
+    }
+    .search-bar{
+        width: 500px;
+    }
+}
+
+@media (max-width: 868px){
+    .font-size-md{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .logo{
+        max-width: 1rem;
+    }
+    //header margin
+    h4{ margin-top: 1.5em;}
+    .font-size-sm{
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    .paragraph-font-sm{
+        font-size: .88rem;
+    }
+    .copyright{
+        font-size: .75rem;
+    }
+    .about-tag-text{
+        font-size: 1.5rem;
+    }
+    .profile-img img{
+        margin-left: .55em;
+    }
+    .banner-2{
+        height: 200px;
+    }
+    .top-text span{
+        font-size: 2.5rem;
+    }
+    .top-text{
+        margin-top: 2em;
+        margin-left: 0em;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .card{
+        margin-left: 2em;
+        max-width: 25em;
+    }
+    .ui-card{
+        max-width: 100%;
+        margin: .5em 0em;
+    }
+    .ui-row{
+        flex-direction: column;
+        max-width: 90em;
+        margin: 0em 0em;
+    }
+    .ui-card-image{
+        max-width: 100%;
+      
+    }
+    .card-h{
+        border: none;
+        height:auto;
+        background-color: $body-bg;
+        box-shadow: none;
+        padding: 0.5em 1em;
+    }
+    .small-p{
+        font-family: .2rem;
+    }
+    .sepa{
+        //background-color: lightgrey;
+        max-width: 100%;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+    .skills{
+        flex-direction: column;
+    }
+    .card-h .card-body{
+        margin-top: 1em;
+        margin-left: 0em;
+    }
+    .banner-text{
+        align-items: center;
+        margin-top: .5em;
+    }
+    .banner-text h4{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .banner-text p{
+        text-align: center;
+        font-size: .8rem;
+    }
+    .clock aside.clock-img{
+        align-content: center;
+    }
+    .clock img{
+        max-width: 200px;
+        margin-left: 0em;
+    }
+    .pro-hr{
+        width: 80%;
+    }
+    //Profile Summary
+    .profile-sum{
+        margin: 0rem .4rem;
+    }
+    .profile-sum h5{
+        margin: 0.8rem .5rem;
+        font-size: $font-size-base * 1.1;
+        font-weight: 400;
+        line-height: 0.6;
+    }
+
+}

@@ -1,0 +1,8 @@
+# Node.js
+node_modules/
+
+# Parcel Cache
+.parcel-cache
+
+# Build Artfacts
+dist/

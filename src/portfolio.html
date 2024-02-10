@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio | Moontipo</title>
+		<link rel="stylesheet" href="../src/scss/stylesheet.scss" />
+		<link rel="icon" href="logo32.ico" type="image/x-icon" />
+		<link rel="icon" href="logo16.ico" type="image/x-icon" />
+		<link rel="icon" href="logo32.png" type="image/png" sizes="32x32" />
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch.png" />
+		<script type="module" src="js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+	</head>
+	<body>
+		<header class="container-fluid banner-2">
+			<div>
+				<div class=" d-none d-md-block">
+					<h4 class=" text-white   top-text">
+						<span>Creativity</span><br />At It's Best !
+					</h4>
+				</div>
+				<div class=" d-sm-none">
+					<h4 class=" text-white  top-text">
+						<span>Creativity</span><br />
+						At It's Best !
+					</h4>
+				</div>
+			</div>
+		</header>
+		<!-- Navigation-->
+		<nav class="navbar navbar-expand-lg fixed-top nav-bg text-white">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="/src/assets/logo4.png" alt="Logo" width="145" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse p-3" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto p-2 text-white">
+						<li class="nav-item g-col-6">
+							<a class="nav-link  ms-4" href="index.html">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link active-link  ms-4" aria-current="page" href="#"
+								>Portfolio</a
+							>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link g-col-6  ms-4" href="about.html">About</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<br />
+		<!-- Search form below -->
+		<div class="custom-container">
+			<form class="d-flex search-bar" role="search">
+				<input
+					class="form-control me-2"
+					id="searchInput"
+					type="search"
+					placeholder="Search Project"
+					aria-label="Search"
+				/>
+				<button class="btn btn-success d-none" id="closeButton" type="submit">Close</button>
+			</form>
+		</div>
+
+		<!-- Section for graphic design work-->
+		<section class="container">
+			<h4 class="text-center font-size-md">Graphic Designs</h4>
+			<!-- Results not found message -->
+			<div>
+				<h4 class="text-center" id="noResultsMessage">No Match found !</h4>
+			</div>
+			<!--Row one-->
+			<div class="row justify-content-evenly">
+				<!--Card-->
+				<aside class="col-sm-4 card m-2 project" data-tags="brochure">
+					<img
+						src="/src/assets/P2-EB/image13-c.png"
+						class="card-img-top card-img-top-s"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title font-size-sm">Product Catalogue</h5>
+						<p class="card-text card-text-ft paragraph-font-sm ">
+							A brochure about products manufuctured by EB Stitch Leather.
+						</p>
+						<a href="/src/projects/PG-01.html" class=" cta-2 font-size-sm"
+							>View Project</a
+						>
+					</div>
+				</aside>
+
+				<!--Card-->
+				<aside class="col-sm-4 card m-2 project" data-tags="brand logo">
+					<img
+						src="/src/assets/P3-BND/image6-c.png"
+						class="card-img-top card-img-top-s"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title font-size-sm">Brand Design</h5>
+						<p class="card-text card-text-ft paragraph-font-sm ">
+							Carefully crafted a pop culture clothing brand. Design that speaks !
+						</p>
+						<a href="/src/projects/PG-02.html" class=" cta-2 font-size-sm"
+							>View Project</a
+						>
+					</div>
+				</aside>
+				<!--Card-->
+				<aside class="col-sm-4 card m-2 project" data-tags="chart infographic">
+					<img
+						src="/src/assets/P5-DTV/image15-c.png"
+						class="card-img-top card-img-top-s"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title font-size-sm">Infographics</h5>
+						<p class="card-text card-text-ft paragraph-font-sm ">
+							Visualizing data using colorful charts for easy presentation.
+						</p>
+						<a href="/src/projects/PG-03.html" class=" cta-2 font-size-sm"
+							>View Project</a
+						>
+					</div>
+				</aside>
+
+				<!--Card-->
+				<aside class="col-sm-4 card m-2 project" data-tags="logo">
+					<img
+						src="/src/assets/P7-LOG/image24-c.png"
+						class="card-img-top card-img-top-s"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title font-size-sm">Logofolio</h5>
+						<p class="card-text card-text-ft paragraph-font-sm ">
+							Modern and professional logos designed with simplicity.
+						</p>
+						<a href="/src/projects/PG-04.html" class=" cta-2 font-size-sm"
+							>View Project</a
+						>
+					</div>
+				</aside>
+				<!--Card-->
+				<aside class="col-sm-4 card m-2 project" data-tags="poster">
+					<img
+						src="/src/assets/P4-PST/image7-c.png"
+						class="card-img-top card-img-top-s"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title font-size-sm">Posters</h5>
+						<p class="card-text card-text-ft paragraph-font-sm ">
+							Eye-catching posters, banners, and flyers for your shops.
+						</p>
+						<a href="/src/projects/PG-05.html" class=" cta-2 font-size-sm"
+							>View Project</a
+						>
+					</div>
+				</aside>
+				<!--Card-->
+				<aside class="col-sm-4 card m-2 project" data-tags="company profile">
+					<img
+						src="/src/assets/P1-NEO/image14-c.png"
+						class="card-img-top card-img-top-s"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title font-size-sm">Company Profile</h5>
+						<p class="card-text card-text-ft paragraph-font-sm ">
+							A brochure design to introduce a company and it's services.
+						</p>
+						<a href="/src/projects/PG-06.html" class=" cta-2 font-size-sm"
+							>View Project</a
+						>
+					</div>
+				</aside>
+
+				<!--Row Three-->
+
+				<!--Card-->
+				<aside class="col-sm-4 card m-2 project" data-tags="illustration art">
+					<img
+						src="/src/assets/P0-TGP/image16-c.png"
+						class="card-img-top card-img-top-s"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title font-size-sm">Illustration</h5>
+						<p class="card-text card-text-ft paragraph-font-sm ">
+							A set of graphics illustrated with a Zambian ghetto feel.
+						</p>
+						<a href="/src/projects/PG-07.html" class=" cta-2 font-size-sm"
+							>View Project</a
+						>
+					</div>
+				</aside>
+				<!--Card-->
+				<aside class="col-sm-4 card m-2 project" data-tags="social poster">
+					<img
+						src="/src/assets/P6-SMP/image17-c.png"
+						class="card-img-top card-img-top-s"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title font-size-sm">Social Media</h5>
+						<p class="card-text card-text-ft paragraph-font-sm ">
+							A series of designs to effectively run a social media campaign.
+						</p>
+						<a href="/src/projects/PG-08.html" class=" cta-2 font-size-sm"
+							>View Project</a
+						>
+					</div>
+				</aside>
+				<!--Card-->
+				<aside class="col-sm-4 card m-2 project" data-tags="brochure bookworld">
+					<img
+						src="/src/assets/P8-INS/image24-c.png"
+						class="card-img-top card-img-top-s"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title font-size-sm">Newspaper Inserts</h5>
+						<p class="card-text card-text-ft paragraph-font-sm ">
+							A3 Newspaper Inserts well designed to advertise products and promos.
+						</p>
+						<a href="/src/projects/PG-09.html" class="cta-2  font-size-sm"
+							>View Project</a
+						>
+					</div>
+				</aside>
+			</div>
+		</section>
+		<!--Section for UI/UX Work-->
+		<section class="ui">
+			<div class="container">
+				<h4 class="text-center font-size-md">UI/UX Designs</h4>
+				<!-- Row-->
+				<div class="row justify-content-center g-1 ui-row">
+					<!-- Card-->
+					<aside class="col-md-2 ui-card">
+						<div class="ui-card-image">
+							<a href="#"
+								><img
+									src="/src/assets/UI-01/ui-card1.png"
+									class="card-img-top"
+									alt="..."
+							/></a>
+						</div>
+					</aside>
+					<!-- Card-->
+					<aside class="col-md-2 ui-card">
+						<div class="ui-card-image">
+							<a href="#"
+								><img
+									src="/src/assets/UI-02/ui-card2.png"
+									class="card-img-top"
+									alt="..."
+							/></a>
+						</div>
+					</aside>
+					<aside class="col-md-2 ui-card">
+						<div class="ui-card-image">
+							<a href="#"
+								><img
+									src="/src/assets/UI-03/ui-card3.png"
+									class="card-img-top"
+									alt="..."
+							/></a>
+						</div>
+					</aside>
+					<!-- Card-->
+					<aside class="col-md-2 ui-card">
+						<div class="ui-card-image">
+							<a href="#"
+								><img
+									src="/src/assets/UI-04/ui-card4.png"
+									class="card-img-top"
+									alt="..."
+							/></a>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</section>
+		<!-- CTA for whatsApp request -->
+		<section class="container justify-content-evenly">
+			<div class="custom-container">
+				<a class="cta-3" target="_blank" href="https://wa.me/message/XZIAKXPPBM7PH1">
+					Let's Chat</a
+				>
+			</div>
+		</section>
+		<br />
+		<!--Section for footer-->
+		<footer class="container-fluid">
+			<div class="container">
+				<div class="row justify-content-evenly">
+					<!-- Social Media icons-->
+					<aside class="social col-sm-3">
+						<div class="custom-container">
+							<a href="#"
+								><img src="/src/assets/fb.svg" alt="..." width="40"
+							/></a>
+							<a href="#"
+								><img src="/src/assets/in.svg" alt="..." width="40"
+							/></a>
+							<a href="#"
+								><img src="/src/assets/be.svg" alt="..." width="40"
+							/></a>
+						</div>
+					</aside>
+				</div>
+			</div>
+			<br />
+			<div class="custom-container">
+				<p class=" copyright text-center">
+					Copyright 2023 &copy; Moontipo Studios. <br />All Rights Reserved. <br />
+					<span class="by"> Developed By : Mwape Chipyoka</span>
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
